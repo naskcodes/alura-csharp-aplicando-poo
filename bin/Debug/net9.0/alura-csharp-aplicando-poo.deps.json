@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "alura-csharp-aplicando-poo/1.0.0": {
+        "runtime": {
+          "alura-csharp-aplicando-poo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "alura-csharp-aplicando-poo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
