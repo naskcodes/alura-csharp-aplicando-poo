@@ -3,24 +3,14 @@
     public string nome;
     public string artista;
     public int duracao;
-    private bool disponivel;
-
-    public void EscreveDisponivel(bool disponibilidade)
-    {
-        disponivel = disponibilidade;
-    }
-
-    public bool LeituraDisponivel()
-    {
-        return disponivel;
-    }
+    public bool Disponivel { get; set; }
 
     public void ExibirFichaTecnica()
     {
         Console.WriteLine($"Nome: {nome}");
         Console.WriteLine($"Artista: {artista}");
         Console.WriteLine($"Duração: {duracao}");
-        if (disponivel)
+        if (Disponivel)
         {
             Console.WriteLine("Disponível no plano.");
         } else
