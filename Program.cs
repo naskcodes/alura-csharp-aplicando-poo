@@ -3,6 +3,7 @@ musica1.nome = "Metallic Stallion";
 musica1.artista = "Marina";
 musica1.duracao = 401;
 musica1.disponivel = true;
+Console.WriteLine(musica1.disponivel);
 
 Musica musica2 = new Musica();
 musica2.nome = "Je ne sais quoi";
