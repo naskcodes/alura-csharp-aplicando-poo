@@ -1,15 +1,16 @@
-﻿Musica musica1 = new Musica();
-musica1.nome = "Metallic Stallion";
-musica1.artista = "Marina";
-musica1.duracao = 273;
-musica1.Disponivel = true;
+﻿using Comumusic;
+
+Album albumPinkFloyd = new Album();
+albumPinkFloyd.Nome = "The Wall";
+
+Musica musica1 = new Musica();
+musica1.Nome = "In the Flesh";
+musica1.Duracao = 4;
 
 Musica musica2 = new Musica();
-musica2.nome = "La Comuna";
-musica2.artista = "El Espectro";
-musica2.duracao = 367;
-musica2.Disponivel = false;
-Console.WriteLine(musica2.Disponivel);
+musica2.Nome = "In the Flesh?";
+musica2.Duracao = 3;
 
-musica1.ExibirFichaTecnica();
-musica2.ExibirFichaTecnica();
+albumPinkFloyd.AdicionarMusica(musica1);
+albumPinkFloyd.AdicionarMusica(musica2);
+albumPinkFloyd.ExibirMusicasAlbum();
