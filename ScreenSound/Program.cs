@@ -1,16 +1,20 @@
 ﻿using Comumusic;
 
-Album albumPinkFloyd = new Album();
-albumPinkFloyd.Nome = "The Wall";
-
-Musica musica1 = new Musica();
-musica1.Nome = "In the Flesh";
-musica1.Duracao = 4;
-
-Musica musica2 = new Musica();
-musica2.Nome = "In the Flesh?";
-musica2.Duracao = 3;
+Banda pinkFloyd = new Banda("Pink Floyd");
+Album albumPinkFloyd = new Album("The Wall", pinkFloyd);
+Musica musica1 = new Musica(pinkFloyd, "In the Flesh")
+{
+    Duracao = 4,
+    Disponivel = true
+};
+Musica musica2 = new Musica(pinkFloyd, "In the Flesh?")
+{
+    Duracao = 3,
+    Disponivel = false
+};
 
 albumPinkFloyd.AdicionarMusica(musica1);
 albumPinkFloyd.AdicionarMusica(musica2);
-albumPinkFloyd.ExibirMusicasAlbum();
+pinkFloyd.AdicionarAlbum(albumPinkFloyd);
+pinkFloyd.ExibirDiscografia();
+musica1.ExibirFichaTecnica();
