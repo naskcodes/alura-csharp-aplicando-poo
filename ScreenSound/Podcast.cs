@@ -19,6 +19,8 @@ namespace Comumusic
         public string Host { get; }
         public string Nome { get; }
         public int TotalEpisodios { get; set; }
+        //Correção: Total de episódios é apenas leitura.
+        //Correção: public int TotalEpisodios => episodios.Count;
 
         public void AdicionarEpisodio(Episodio episodio)
         {
@@ -29,6 +31,7 @@ namespace Comumusic
         {
             Console.WriteLine($"{Nome}:");
             foreach (var episodio in episodios) 
+            //Correção: o tipo Episódio seria uma melhor tipificação da variável episodio.
             {
                 Console.WriteLine($"Episódio: {episodio.Titulo}");
             }
